@@ -5,6 +5,11 @@ For this purpose high-quality means:
 2. Cache-aware, morden hardware has a counter-intutitive but known behavoir, data structures willfully ignorant of the basic facts are bad; I should not be.
 3. Comfy user interface.
 
+Data stucture summerys(details in seperate files):
+---
+1. Ring array: an array with an access pattern that loops back on itself rather then overfloawing
+2. 
+
 Month 1
 ----
 * Get a dub package up and running
