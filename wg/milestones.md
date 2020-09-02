@@ -8,7 +8,11 @@ For this purpose high-quality means:
 Data stucture summerys(details in seperate files):
 ---
 1. Ring array: an array with an access pattern that loops back on itself rather then overfloawing
-2. 
+2. Opinionated list of lists: A array of nullable!T, where null is an end of a list.
+3. Metadata: like nullable, but adds additional 7 bit int to round out the wasted space of nullable, and more flexable in useage pattern.
+4. Member index arrays: A lighter version of AoSoA. Given a user defined T and a member, packes the members together for better cashe usage for searches. Highly experimental.
+5. Fixed length string: When you want char[n] rather then the default char[].
+6. Semi-static array: no gc, copy to larger array during overflow and custom allocator friendly array abstraction.
 
 Month 1
 ----
